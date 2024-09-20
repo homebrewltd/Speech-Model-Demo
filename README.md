@@ -1,2 +1,2 @@
 # Speech-Model-Demo
-An Codebase to host a demo for Speech Multimodal models
+A Codebase to host a Web Demo for Speech Multimodal models
