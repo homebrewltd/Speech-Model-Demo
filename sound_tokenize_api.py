@@ -21,7 +21,7 @@ if not os.path.exists("whisper-vq-stoks-v3-7lang-fixed.model"):
 vq_model = RQBottleneckTransformer.load_model(
         "whisper-vq-stoks-v3-7lang-fixed.model"
     ).to(device)
-
+vq_model.ensure_whisper(device)
 @app.post("/tokenize")
 async def tokenize_audio(file: UploadFile = File(...)):
     # Save the uploaded file temporarily
